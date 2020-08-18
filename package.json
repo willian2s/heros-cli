@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "mocha -w"
   },
   "keywords": [],
@@ -11,5 +12,8 @@
   "license": "ISC",
   "devDependencies": {
     "mocha": "^8.1.1"
+  },
+  "dependencies": {
+    "commander": "^6.0.0"
   }
 }

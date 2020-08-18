@@ -6,7 +6,7 @@ const writeFileAsync = promisify(writeFile)
 
 class Database {
   constructor() {
-    this.NOME_ARQUIVO = 'herois.json'
+    this.NOME_ARQUIVO = './src/database/herois.json'
   }
 
   async obterDadosArquivo() {
