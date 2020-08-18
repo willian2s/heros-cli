@@ -54,11 +54,32 @@ class Database {
     const dados = await this.obterDadosArquivo()
     const indice = dados.findIndex(item => item.id === parseInt(id))
     if(indice === -1) {
-      throw Error('O usuario inforado não existe')
+      throw Error('O heroi informado não existe')
     }
     dados.splice(indice, 1)
     
     return await this.escreverDadosArquivo(dados)
+  }
+
+  async atualizar(id, mod) {
+    const dados = await this.obterDadosArquivo()
+    const indice = dados.findIndex(item => item.id === parseInt(id))
+
+    if(indice === -1) {
+      throw Error('O heroi informado não existe')
+    }
+
+    const atual = dados[indice]
+    const objAtualizar = {
+      ...atual,
+      ...mod
+    }
+    dados.splice(indice, 1)
+
+    return await this.escreverDadosArquivo([
+      ...dados,
+      objAtualizar
+    ])
   }
 }
 
