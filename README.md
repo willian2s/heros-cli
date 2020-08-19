@@ -39,7 +39,7 @@ npm install
 
 * Para adicionar um novo heroi:
 ```
-node src/index.js -n Batman -p Investigativo
+node src/index.js -c -n Batman -p Investigativo
 ```
 
 * Para lista herois:
@@ -49,7 +49,7 @@ node src/index.js -l
 
 * Para atualizar um heroi:
 ```
-node src/index.js -i idDoHeroi -n Batman -p Dinheiro
+node src/index.js -a -i idDoHeroi -n Batman -p Dinheiro
 ```
 
 * Para Remover um heroi:
