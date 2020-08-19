@@ -35,6 +35,22 @@ npm install
 
 3 - Rode:
 
+* Para adicionar um novo heroi:
 ```
-npm start
+node src/index.js -n Batman -p Investigativo
+```
+
+* Para lista herois:
+```
+node src/index.js -l
+```
+
+* Para atualizar um heroi:
+```
+node src/index.js -i idDoHeroi -n Batman -p Dinheiro
+```
+
+* Para Remover um heroi:
+```
+node src/index.js -r -i idDoHeroi
 ```
