@@ -33,7 +33,9 @@ npm install
 
 > Lembrando que você é livre para utilizar o YARN.
 
-3 - Rode:
+3 - Renomeie o aquivo `herois.json.example` para `herois.json`
+
+4 - Rode:
 
 * Para adicionar um novo heroi:
 ```
